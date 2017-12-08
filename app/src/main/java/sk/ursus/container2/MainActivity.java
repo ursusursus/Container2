@@ -1,7 +1,9 @@
 package sk.ursus.container2;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+
+import sk.ursus.library.Foo;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -9,5 +11,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Foo.foo();
     }
 }
